@@ -31,6 +31,20 @@ def layout():
     print(department_employees)
     fig= px.bar(department_employees, x=department_employees["Department"],  y= department_employees["count"])
     st.plotly_chart(fig)
+    
+    
+    fig= px.histogram(df, y= "Salary_SEK")
+    st.plotly_chart(fig)
+    
+    
+    fig= px.box(df, x= "Position", y= "Salary_SEK", labels= {"Salary": "Lön(sek)", "Position": "Position"})
+    st.plotly_chart(fig)
+    
+    fig= px.histogram(df, y= "Age")
+    st.plotly_chart(fig)
+    
+    fig= px.box(df, x= "Department", y= "Age", labels= {"Age": "Ålder", "Department": "Avdelning"})
+    st.plotly_chart(fig)
 
 if __name__ == '__main__':
     layout()
