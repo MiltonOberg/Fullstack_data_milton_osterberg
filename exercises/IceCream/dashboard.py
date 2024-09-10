@@ -37,6 +37,17 @@ def layout():
     
     st.markdown(f"Förutspådd intäckt temp:({input}) \nIntäckt {y_pred}")
     
+    read_css()
+
+
+def read_css():
+    css_path= Path(__file__).parent/ "style.css"
+    
+    with open(css_path) as css:
+        st.markdown(
+            f"<style>{css.read()}<style>", unsafe_allow_html= True
+                    )
+        
 if __name__ == '__main__':
     layout()
     

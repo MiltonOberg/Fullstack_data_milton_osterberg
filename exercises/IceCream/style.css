@@ -1,0 +1,38 @@
+:root{
+    --primary: #2281fd;
+    --background: #fafafa;
+    --background-secondary: #ebebeb;
+    --slider: #ff05ff;
+
+    /*sizes*/
+    --ratio: 1.5;
+    --s-5: calc(var(--s-4)/var(--ratio));
+    --s-4: calc(var(--s-3)/var(--ratio));
+    --s-3: calc(var(--s-2)/var(--ratio));
+    --s-2: calc(var(--s-1)/var(--ratio));
+    --s-1: calc(var(--s0)/var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0)*var(--ratio));
+    --s2: calc(var(--s1)*var(--ratio));
+    --s3: calc(var(--s2)*var(--ratio));
+    --s4: calc(var(--s3)*var(--ratio));
+    --s5: calc(var(--s4)*var(--ratio));
+
+}
+body*+*{
+    margin-top: var(--s-2);
+}
+
+h1{
+    color: var(--primary);
+}
+h1{
+    font-size: var(--s3);
+}
+
+[data-testid="stSliderThumbValue"]{
+    color: var(--slider);
+}
+[role="slider"]{
+    background-color: var(--slider);
+}
