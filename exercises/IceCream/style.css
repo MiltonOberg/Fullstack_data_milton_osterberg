@@ -29,10 +29,15 @@ h1{
 h1{
     font-size: var(--s3);
 }
-
+h2{
+    font-size: var(--s5);
+}
 [data-testid="stSliderThumbValue"]{
     color: var(--slider);
 }
 [role="slider"]{
     background-color: var(--slider);
+}
+[data-testid="stSliderTickBar"]{
+    color: var(--slider)
 }
