@@ -29,6 +29,6 @@ class Bot:
         answer = json.loads(response.text)['openai/gpt-4o-mini']['generated_text']
         
         self._history.append({"role": "user", "message": prompt})
-        self._history.append({"role": "bot", "message": answer})
+        self._history.append({"role": "assistant", "message": answer})
         
         return answer

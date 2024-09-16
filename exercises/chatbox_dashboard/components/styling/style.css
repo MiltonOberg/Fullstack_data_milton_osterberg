@@ -20,3 +20,31 @@
 body*+*{
     margin-top: var(--s-2);
 }
+
+
+
+h1{
+    color: var(--primary);
+    background-color: var(--background-secondary);
+}
+
+.stAppViewMain{
+    background-color: var(--background);
+}
+
+.st-emotion-cache-hzygls{
+    background-color: var(--background-secondary);
+}
+
+[data-testid="stChatMessage"]{
+    background-color: var(--background-secondary);
+}
+
+[data-testid="stHeader"]{
+    background-color: var(--background-secondary);
+    color: var(--primary);
+}
+
+[data-testid="stMarkdownContainer"]{
+    color: var(--primary);
+}
