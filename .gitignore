@@ -163,3 +163,8 @@ cython_debug/
 
 
 *.DS_Store
+#duckdb
+*.wal
+#dbeaver
+.project
+.dbeaver
