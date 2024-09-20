@@ -15,11 +15,11 @@ def ingest_data():
         with Database(DATABASE_PATH) as db:
             db.query(f"""
                 CREATE TABLE IF NOT EXISTS supplier_invoice.{invoice_name}
-                AS 
-                SELECT 
-                    * 
-                FROM 
-                    read_csv_auto('{csv_path}', types={{'Organisationsnummer': 'VARCHAR'}});
+                AS
+                SELECT
+                    *
+                FROM
+                    read_csv_auto('{csv_path}');
             """)
         
     
