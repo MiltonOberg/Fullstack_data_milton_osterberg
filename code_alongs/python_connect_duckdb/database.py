@@ -19,6 +19,6 @@ class Database:
             self.connection.close()
             
             
-class Database_dataframe(Database):
+class DatabaseDataframe(Database):
     def query(self, query):
         return self.connection.execute(query).df()

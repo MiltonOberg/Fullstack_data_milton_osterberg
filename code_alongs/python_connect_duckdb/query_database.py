@@ -1,8 +1,8 @@
-from database import Database_dataframe
+from database import DatabaseDataframe
 from constants import DATABASE_PATH
 
 
-class Query_database:
+class QueryDatabase:
     def __init__(self, sql_query) -> None:
-        with Database_dataframe(DATABASE_PATH) as db:
+        with DatabaseDataframe(DATABASE_PATH) as db:
             self.df= db.query(sql_query)
