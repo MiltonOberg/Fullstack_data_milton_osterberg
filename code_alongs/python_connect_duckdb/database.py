@@ -1,5 +1,4 @@
 import duckdb
-from constants import DATABASE_PATH
 
 
 
@@ -20,8 +19,6 @@ class Database:
             self.connection.close()
             
             
-if __name__ == "__main__":
-    with Database(DATABASE_PATH) as db:
-        query1= db.query("SELECT * FROM information_schema.schemata;")
-        
-    print(query1)
+class Database_dataframe(Database):
+    def query(self, query):
+        return self.connection.execute(query).df()
