@@ -1,11 +1,13 @@
 import streamlit as st 
 from frontend.kpi import ContentKPI
-from frontend.graphs import ViewsTrend
+from frontend.graphs import ViewsTrend, CountryViews
+from frontend.graphs_dictionary import graph_options
 
 
 # device_kpi = DeviceKPI()
 content_kpi = ContentKPI()
 views_graph = ViewsTrend()
+country_views= CountryViews()
 
 def layout():
     st.markdown("# The data driven youtuber")
@@ -13,7 +15,9 @@ def layout():
     # device_kpi.display_device_views()
     # device_kpi.display_device_summary()
     content_kpi.display_content()
-    views_graph.display_plot()
+    
+    choice= st.selectbox("Select graph", options= graph_options.keys())
+    graph_options[choice].display_plot()
 
 if __name__ == "__main__":
     layout()
