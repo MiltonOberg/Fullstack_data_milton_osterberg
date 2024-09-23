@@ -8,13 +8,15 @@ class Database:
         self.connection = None
         
     def __enter__(self):
+        # Starts connection
         self.connection = duckdb.connect(self.db_path)
         return self
-    
+    # Every thing that can happen inbetween
     def query(self, query):
         return self.connection.execute(query).fetchall()
     
     def __exit__(self, exc_type, exc_value, traceback):
+        # Exits connection
         if self.connection:
             self.connection.close()
             
