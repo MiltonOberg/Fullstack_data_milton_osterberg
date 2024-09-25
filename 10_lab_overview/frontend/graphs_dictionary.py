@@ -2,8 +2,7 @@ from frontend.graphs import ViewsTrend, CountryViews, Top5MostWatchedVideos, Top
 
 
 graph_options= {
-    "Views over time": ViewsTrend(),
-    "Views per country": CountryViews(),
-    "Top 5 most watched videos": Top5MostWatchedVideos(),
-    "Top 5 click percentage of exposure": Top5ClickExposure()
+    "Visningar över tid": ViewsTrend(),
+    "Top 5 videos med flest visningar": Top5MostWatchedVideos(),
+    "Top 5 klick procent av exponeringar": Top5ClickExposure()
 }
