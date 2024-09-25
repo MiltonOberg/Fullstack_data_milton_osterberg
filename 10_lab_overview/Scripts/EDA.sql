@@ -7,3 +7,5 @@ SELECT * FROM innehall.tabelldata;
 SELECT * FROM innehall.diagramdata;
 
 SELECT * FROM enhetstyp.tabelldata;
+
+SELECT * FROM marts.views_per_country;
