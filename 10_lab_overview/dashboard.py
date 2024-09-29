@@ -2,6 +2,7 @@ import streamlit as st
 from frontend.kpi import ContentKPI, DeviceKPI, CountryViews
 from frontend.graphs import ViewsTrend
 from frontend.graphs_dictionary import graph_options
+from frontend.read_css import read_css
 
 
 # device_kpi = DeviceKPI()
@@ -23,6 +24,7 @@ def layout():
 
     country_views.display_content()
     
+    read_css()
     
 if __name__ == "__main__":
     layout()
