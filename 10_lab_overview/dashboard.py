@@ -17,12 +17,21 @@ def layout():
     st.markdown("Den här dashboarden syftar till att utforska datan i min youtubekanal")
     
     content_kpi.display_content()
-    device_kpi.display_content()
+    #device_kpi.display_content()
     
     choice= st.selectbox("## Select graph", options= graph_options.keys())
     graph_options[choice].display_plot()
 
-    country_views.display_content()
+
+    with st.container():
+
+        col1, col2 = st.columns(2, gap= "medium")
+
+        with col1:
+            country_views.display_content()
+
+        with col2:
+            st.markdown("### Sweden\n### India\n### Malta")
     
     read_css()
     
