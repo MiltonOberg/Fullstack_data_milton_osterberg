@@ -19,6 +19,7 @@ class CountryViews:
     
     def display_plot(self):
         fig= px.bar(self.df, x= "Geografi", y= "Visningar")
+        
         fig.update_xaxes(title= "Countries")
         st.markdown("## Antal visningar per land")
         st.plotly_chart(fig)
@@ -29,10 +30,13 @@ class Top5MostWatchedVideos:
         
     def display_plot(self):
         fig= px.bar(self.df, x= "Videotitel", y= "Visningar")
-        fig.update_xaxes(titlefont= dict(size= 20), 
-                         tickfont= dict(size= 15))
-        fig.update_yaxes(titlefont= dict(size= 20),
-                         range= [0, self.df["Visningar"].max()])
+        
+        fig.update_xaxes(
+            titlefont= dict(size= 20), 
+            tickfont= dict(size= 15))
+        fig.update_yaxes(
+            titlefont= dict(size= 20),
+            range= [0, self.df["Visningar"].max()])
         st.markdown("## Top 5 most watched videos")
         st.plotly_chart(fig)
         
@@ -43,6 +47,7 @@ class Top5ClickExposure:
     
     def display_plot(self):
         fig= px.bar(self.df, x= "Videotitel", y= "click%")
+        
         fig.update_xaxes(title= "Click percentage",
                          titlefont= dict(size= 20), 
                          tickfont= dict(size= 15))
