@@ -23,3 +23,16 @@ FROM innehall.tabelldata
 ORDER BY "click%"
 DESC LIMIT 5;
 
+DESC;
+
+SELECT * FROM innehall.tabelldata;
+
+SELECT * FROM innehallstyp.tabelldata;
+
+SELECT * FROM operativsystem.tabelldata;
+
+SELECT * FROM tittare.tabelldata_alder;
+
+SELECT * FROM tittare.tabelldata_kon;
+
+SELECT * FROM prenumerationskalla.totalt;
