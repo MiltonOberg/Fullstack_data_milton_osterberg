@@ -36,7 +36,7 @@ class DeviceKPI:
             with col:
                 st.metric(device, views)
                 
-class CountryViews:
+class CountryViewsKPI:
     def __init__(self) -> None:
         self.df= QueryDatabase(f"SELECT * FROM marts.views_per_country").df
     

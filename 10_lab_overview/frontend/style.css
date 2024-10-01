@@ -16,7 +16,7 @@
     --primary: #050505;
     --background: #fafafa;
     --background-secondary: #ebebeb;
-    --block: #f4f4f4;
+    --titles: #f4f4f4;
     --white: #ffffff;
 }
 
@@ -29,7 +29,7 @@ body*+*{
 }
 
 [data-testid="stHeadingWithActionElements"]{
-    background-color: var(--block);
+    background-color: var(--titles);
 }
 
 .st-emotion-cache-jkfxgf{
@@ -40,3 +40,6 @@ body*+*{
     background-color: var(--white);
 }
 
+.st-emotion-cache-jkfxgf{
+    font-size: var(--s3)
+}

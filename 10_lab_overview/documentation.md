@@ -28,5 +28,8 @@ Här ligger de olika diagrammen för dashboarden.
 
 
 ### KPI
-Denna fil är skapade kpier för dashboarden.
+Denna fil är skapade metrics, kpier för dashboarden.
 
+
+## Dashboard
+Här har vi layouten för den faktiska dashboarden. Där resten av backend och frontend "används".
