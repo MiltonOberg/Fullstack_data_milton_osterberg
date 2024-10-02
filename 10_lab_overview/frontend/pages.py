@@ -12,7 +12,7 @@ device_kpi= DeviceKPI()
 country_views= CountryViewsKPI()
 
 def kpier():
-    st.title("Kpier")
+    st.title("hej")
     content_kpi.display_content()
     with st.container():
 
