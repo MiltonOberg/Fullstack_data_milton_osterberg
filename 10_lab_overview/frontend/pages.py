@@ -27,5 +27,5 @@ def kpier():
 
 def graphs():
     st.title("Grafer")
-    choice= st.selectbox("### Select graph", options= graph_options.keys())
+    choice= st.selectbox("Select graph", options= graph_options.keys())
     graph_options[choice].display_plot()
