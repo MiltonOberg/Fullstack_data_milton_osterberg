@@ -16,7 +16,7 @@
     --primary: #050505;
     --background: #fafafa;
     --background-secondary: #ebebeb;
-    --titles: #f4f4f4;
+    --titles: #514ba675;
     --white: #ffffff;
 }
 
@@ -52,3 +52,6 @@ h3{
     background-color: var(--white);
 }
 
+.st-emotion-cache-jkfxgf{
+    font-size: var(--s3)
+}

@@ -12,7 +12,7 @@ device_kpi= DeviceKPI()
 country_views= CountryViewsKPI()
 
 def kpier():
-    st.title("hej")
+    st.title("Kpier")
     content_kpi.display_content()
     with st.container():
 
@@ -21,8 +21,6 @@ def kpier():
         with col1:
             country_views.display_content()
 
-        with col2:
-            st.markdown("### Sweden\n### India\n### Malta")
     
     device_kpi.display_content()
 
