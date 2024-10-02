@@ -4,8 +4,8 @@ from frontend.graph_dictionary import graph_options
 
 def home():
     st.title("The data driven youtuber")
-    st.markdown("## Den här dashboarden syftar till att utforska datan i min youtubekanal")
-    st.markdown("## mer info")
+    st.markdown("## Den här dashboarden syftar till att utforska datan i en youtubekanal")
+    st.markdown("### Milton Österberg")
 
 content_kpi = ContentKPI()
 device_kpi= DeviceKPI()
@@ -29,5 +29,5 @@ def kpier():
 
 def graphs():
     st.title("Grafer")
-    choice= st.selectbox("## Select graph", options= graph_options.keys())
+    choice= st.selectbox("### Select graph", options= graph_options.keys())
     graph_options[choice].display_plot()

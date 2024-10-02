@@ -24,6 +24,18 @@ body*+*{
     margin-top: var(--s-2);
 }
 
+h1{
+    font-size: var(--s3);
+}
+
+h2{
+    font-size: var(--s1);
+}
+
+h3{
+    font-size: var(--s-1);
+}
+
 .stAppViewBlockContainer{
     background-color: var(--background);
 }
@@ -40,6 +52,3 @@ body*+*{
     background-color: var(--white);
 }
 
-.st-emotion-cache-jkfxgf{
-    font-size: var(--s3)
-}

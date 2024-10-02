@@ -8,7 +8,6 @@ def layout():
     page= st.sidebar.radio("# Sidor", page_option.keys())
     page_option[page]()
     
-    
     read_css()
     
 if __name__ == "__main__":
