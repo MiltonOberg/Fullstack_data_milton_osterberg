@@ -45,4 +45,4 @@ class CountryViewsKPI:
         
         for col, country, views in zip(st.columns(len(self.df["Geografi"])), self.df["Geografi"], self.df["Visningar"]):
             with col:
-                st.metric(country, round(views))
+                st.metric(country, round(views))    

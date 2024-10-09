@@ -16,12 +16,11 @@ def kpier():
     content_kpi.display_content()
     with st.container():
 
-        col1, col2 = st.columns(2, gap= "medium")
+        col1, col2= st.columns(2, gap="medium")
 
         with col1:
             country_views.display_content()
-
-    
+            
     device_kpi.display_content()
 
 

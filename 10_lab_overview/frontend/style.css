@@ -15,10 +15,10 @@
 
 
     --primary: #050505;
-    --background: #fafafa;
+    --background: #888fa3;
     --background-secondary: #ebebeb;
     --titles: #514ba6ce;
-    --gray-markdown: #767676d5;
+    --white: #ffffff;
 }
 
 body*+*{
@@ -38,37 +38,23 @@ h3{
 }
 
 
-body, .stApp {
-    background-image: var(--dashboard-background);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-[data-testid="stHeader"]{
-    display: none;
-    background-color: var(--background-secondary);
-}
-
-.st-emotion-cache-ue6h4q{
-    background-color: var(--background-secondary);
+.stAppViewMain{
+    background-color: var(--background);
 }
 
 .st-emotion-cache-pgf13w{
-    background-color: var(--titles);
+    background-color: var(--background);
 }
 
-.st-emotion-cache-1rsyhoq{
-    background-color: var(--titles)
-}
-.st-emotion-cache-1rsyhoq p{
-    background-color: var(--gray-markdown)
+[data-testid="stHorizontalBlock"]{
+    background-color: var(--white);
 }
 
-.st-emotion-cache-ocqkz7{
-    background-color: var(--titles);
+.st-emotion-cache-2ysx9g{
+    background-color: var(--background);
 }
 
-.st-emotion-cache-jkfxgf{
-    font-size: var(--s3)
+.st-emotion-cache-434r0z.e1f1d6gn5 {
+    background-color: transparent;
 }
