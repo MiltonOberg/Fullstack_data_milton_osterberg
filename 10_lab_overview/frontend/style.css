@@ -1,4 +1,5 @@
 :root{
+    --dashboard-background: url("dashboard_background.png");
     --ratio: 1.5;
     --s-5: calc(var(--s-4) / var(--ratio));
     --s-4: calc(var(--s-3) / var(--ratio));
@@ -36,13 +37,19 @@ h3{
     font-size: var(--s-1);
 }
 
-.stAppViewBlockContainer{
-    background-color: var(--background);
+
+body, .stApp {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 
-[data-testid="stHeadingWithActionElements"]{
-    background-color: var(--titles);
+
+[data-testid="stHeader"]{
+    display: none;
+    background-color: var(--background-secondary);
 }
+
 
 .st-emotion-cache-jkfxgf{
     font-size: var(--s1);
