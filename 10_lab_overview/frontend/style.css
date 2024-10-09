@@ -1,5 +1,5 @@
 :root{
-    --dashboard-background: url("dashboard_background.png");
+    --dashboard-background: url("https://images.unsplash.com/photo-1640725804478-ebf80960a3f4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     --ratio: 1.5;
     --s-5: calc(var(--s-4) / var(--ratio));
     --s-4: calc(var(--s-3) / var(--ratio));
@@ -17,8 +17,8 @@
     --primary: #050505;
     --background: #fafafa;
     --background-secondary: #ebebeb;
-    --titles: #514ba675;
-    --white: #ffffff;
+    --titles: #514ba6ce;
+    --gray-markdown: #767676d5;
 }
 
 body*+*{
@@ -39,9 +39,10 @@ h3{
 
 
 body, .stApp {
-    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+    background-image: var(--dashboard-background);
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 [data-testid="stHeader"]{
@@ -49,13 +50,23 @@ body, .stApp {
     background-color: var(--background-secondary);
 }
 
+.st-emotion-cache-ue6h4q{
+    background-color: var(--background-secondary);
+}
 
-.st-emotion-cache-jkfxgf{
-    font-size: var(--s1);
+.st-emotion-cache-pgf13w{
+    background-color: var(--titles);
+}
+
+.st-emotion-cache-1rsyhoq{
+    background-color: var(--titles)
+}
+.st-emotion-cache-1rsyhoq p{
+    background-color: var(--gray-markdown)
 }
 
 .st-emotion-cache-ocqkz7{
-    background-color: var(--white);
+    background-color: var(--titles);
 }
 
 .st-emotion-cache-jkfxgf{
