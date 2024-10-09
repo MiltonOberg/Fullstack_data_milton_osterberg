@@ -44,7 +44,6 @@ body, .stApp {
     background-repeat: no-repeat; 
 }
 
-
 [data-testid="stHeader"]{
     display: none;
     background-color: var(--background-secondary);
