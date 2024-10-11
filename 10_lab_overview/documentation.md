@@ -30,6 +30,21 @@ Här ligger de olika diagrammen för dashboarden.
 ### KPI
 Denna fil är skapade metrics, kpier för dashboarden.
 
+### Pages_dictionary
+Här har jag ett dict för sido menyn i dashboarden med de olika sidovalen.
+
+### Pages
+Här är då layouten för de olika sidorna. Som då kallas beroende på vad för sida man väljer i denna meny.
+
+### Style
+Den css style med lite olika färger och storlekar på titlar och rubriker.
+
 
 ## Dashboard
 Här har vi layouten för den faktiska dashboarden. Där resten av backend och frontend "används".
+
+
+
+
+### Scripts
+Dessa ligger i backend. Det finns en till Scripts mapp men den läggs till varje gång jag startar dbeaver.

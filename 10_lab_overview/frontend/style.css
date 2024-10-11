@@ -16,7 +16,7 @@
 
     --primary: #050505;
     --background: #888fa3;
-    --background-secondary: #ebebeb;
+    --background-secondary: #707686b1;
     --titles: #514ba6ce;
     --white: #ffffff;
 }
@@ -36,25 +36,19 @@ h2{
 h3{
     font-size: var(--s-1);
 }
-
-
-
+/*Title color*/
+.st-emotion-cache-pgf13w{
+    background-color: var(--background-secondary);
+}
+/*Main background*/
 .stAppViewMain{
     background-color: var(--background);
 }
-
-.st-emotion-cache-pgf13w{
-    background-color: var(--background);
-}
-
+/*The metric color*/
 [data-testid="stHorizontalBlock"]{
     background-color: var(--white);
 }
-
-.st-emotion-cache-2ysx9g{
-    background-color: var(--background);
-}
-
+/*Transparency for the split columns on page kpi*/
 .st-emotion-cache-434r0z.e1f1d6gn5 {
     background-color: transparent;
 }
