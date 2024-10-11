@@ -22,7 +22,8 @@ FROM
 	enhetstyp.tabelldata );
 
 
-
 -- checks
 SELECT * FROM marts.device_views_date;
 SELECT * FROM marts.device_summary;
+
+DESC;
